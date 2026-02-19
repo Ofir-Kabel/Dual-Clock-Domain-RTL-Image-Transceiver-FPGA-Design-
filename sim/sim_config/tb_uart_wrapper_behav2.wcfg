@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_uart_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="common_pkg" />
+            <top_module name="glbl" />
+            <top_module name="regs_pkg" />
+            <top_module name="tb_uart_wrapper" />
+            <top_module name="uart_defs_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="353"></NameColumnWidth>
+      <ValueColumnWidth column_width="121"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group640" type="group">
+      <obj_property name="label">RX_MAC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/r_data" type="array">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/frame_data" type="array">
+         <obj_property name="ElementShortName">frame_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">frame_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/rx_mac_done" type="logic">
+         <obj_property name="ElementShortName">rx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">rx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/rx_phy_done" type="logic">
+         <obj_property name="ElementShortName">rx_phy_done</obj_property>
+         <obj_property name="ObjectShortName">rx_phy_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/cmd_ack" type="logic">
+         <obj_property name="ElementShortName">cmd_ack</obj_property>
+         <obj_property name="ObjectShortName">cmd_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/rx_mac_str" type="logic">
+         <obj_property name="ElementShortName">rx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">rx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/rx_vec" type="array">
+         <obj_property name="ElementShortName">rx_vec[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_vec[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/write_ptr" type="array">
+         <obj_property name="ElementShortName">write_ptr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">write_ptr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/temp_frame_reg" type="array">
+         <obj_property name="ElementShortName">temp_frame_reg[127:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_frame_reg[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_mac_inst/bytes_recived_cnt" type="array">
+         <obj_property name="ElementShortName">bytes_recived_cnt</obj_property>
+         <obj_property name="ObjectShortName">bytes_recived_cnt</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group639" type="group">
+      <obj_property name="label">RX_PHY</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/i_rx_line" type="logic">
+         <obj_property name="ElementShortName">i_rx_line</obj_property>
+         <obj_property name="ObjectShortName">i_rx_line</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/br16_pulse" type="logic">
+         <obj_property name="ElementShortName">br16_pulse</obj_property>
+         <obj_property name="ObjectShortName">br16_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/sample_counter" type="array">
+         <obj_property name="ElementShortName">sample_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/sample_reg" type="array">
+         <obj_property name="ElementShortName">sample_reg[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_reg[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/bit_counter" type="array">
+         <obj_property name="ElementShortName">bit_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/temp_rx_vec" type="array">
+         <obj_property name="ElementShortName">temp_rx_vec[9:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_rx_vec[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/o_rx_phy_vec" type="array">
+         <obj_property name="ElementShortName">o_rx_phy_vec[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rx_phy_vec[7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/o_rx_phy_done" type="logic">
+         <obj_property name="ElementShortName">o_rx_phy_done</obj_property>
+         <obj_property name="ObjectShortName">o_rx_phy_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/o_rx_mac_str" type="logic">
+         <obj_property name="ElementShortName">o_rx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">o_rx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/sample_en" type="logic">
+         <obj_property name="ElementShortName">sample_en</obj_property>
+         <obj_property name="ObjectShortName">sample_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/busy_en" type="logic">
+         <obj_property name="ElementShortName">busy_en</obj_property>
+         <obj_property name="ObjectShortName">busy_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/rx_bit_pulse" type="logic">
+         <obj_property name="ElementShortName">rx_bit_pulse</obj_property>
+         <obj_property name="ObjectShortName">rx_bit_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/rx_str_pulse" type="logic">
+         <obj_property name="ElementShortName">rx_str_pulse</obj_property>
+         <obj_property name="ObjectShortName">rx_str_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/rx_busy_pulse" type="logic">
+         <obj_property name="ElementShortName">rx_busy_pulse</obj_property>
+         <obj_property name="ObjectShortName">rx_busy_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/rx_done_pulse" type="logic">
+         <obj_property name="ElementShortName">rx_done_pulse</obj_property>
+         <obj_property name="ObjectShortName">rx_done_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/br16_acc" type="array">
+         <obj_property name="ElementShortName">br16_acc[28:0]</obj_property>
+         <obj_property name="ObjectShortName">br16_acc[28:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/br16_pulse_cnt" type="array">
+         <obj_property name="ElementShortName">br16_pulse_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">br16_pulse_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/stage" type="logic">
+         <obj_property name="ElementShortName">stage</obj_property>
+         <obj_property name="ObjectShortName">stage</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/DUT/Rx_phy_inst/rx_data" type="logic">
+         <obj_property name="ElementShortName">rx_data</obj_property>
+         <obj_property name="ObjectShortName">rx_data</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

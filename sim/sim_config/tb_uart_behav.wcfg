@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_uart_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="common_pkg" />
+            <top_module name="glbl" />
+            <top_module name="regs_pkg" />
+            <top_module name="tb_uart_wrapper" />
+            <top_module name="uart_defs_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="75,685.881666 us"></ZoomStartTime>
+      <ZoomEndTime time="77,582.881667 us"></ZoomEndTime>
+      <Cursor1Time time="77,266.715000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="284"></NameColumnWidth>
+      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="group539" type="group">
+      <obj_property name="label">TRX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_uart_wrapper/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/i_tx_mac_str" type="logic">
+         <obj_property name="ElementShortName">i_tx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">i_tx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/i_tx_mac_vec" type="array">
+         <obj_property name="ElementShortName">i_tx_mac_vec[135:0]</obj_property>
+         <obj_property name="ObjectShortName">i_tx_mac_vec[135:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/o_tx_mac_done" type="logic">
+         <obj_property name="ElementShortName">o_tx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">o_tx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/i_uart_en" type="logic">
+         <obj_property name="ElementShortName">i_uart_en</obj_property>
+         <obj_property name="ObjectShortName">i_uart_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/i_wr_en" type="logic">
+         <obj_property name="ElementShortName">i_wr_en</obj_property>
+         <obj_property name="ObjectShortName">i_wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/i_addr_low" type="array">
+         <obj_property name="ElementShortName">i_addr_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_addr_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/i_w_data" type="array">
+         <obj_property name="ElementShortName">i_w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/o_r_txr_data" type="array">
+         <obj_property name="ElementShortName">o_r_txr_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_r_txr_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/i_rx_line" type="logic">
+         <obj_property name="ElementShortName">i_rx_line</obj_property>
+         <obj_property name="ObjectShortName">i_rx_line</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/o_tx_line" type="logic">
+         <obj_property name="ElementShortName">o_tx_line</obj_property>
+         <obj_property name="ObjectShortName">o_tx_line</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/o_rx_mac_done" type="logic">
+         <obj_property name="ElementShortName">o_rx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">o_rx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/o_rx_mac_vec" type="array">
+         <obj_property name="ElementShortName">o_rx_mac_vec[223:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rx_mac_vec[223:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/o_led_toggle" type="logic">
+         <obj_property name="ElementShortName">o_led_toggle</obj_property>
+         <obj_property name="ObjectShortName">o_led_toggle</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/CLK_PERIOD" type="array">
+         <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/BAUD_RATE" type="array">
+         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/BIT_PERIOD" type="array">
+         <obj_property name="ElementShortName">BIT_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BIT_PERIOD[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group540" type="group">
+      <obj_property name="label">TX_PHY</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/tx_phy_str" type="logic">
+         <obj_property name="ElementShortName">tx_phy_str</obj_property>
+         <obj_property name="ObjectShortName">tx_phy_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/delay_ms" type="array">
+         <obj_property name="ElementShortName">delay_ms[7:0]</obj_property>
+         <obj_property name="ObjectShortName">delay_ms[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/tx_line" type="logic">
+         <obj_property name="ElementShortName">tx_line</obj_property>
+         <obj_property name="ObjectShortName">tx_line</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/byte_ready" type="logic">
+         <obj_property name="ElementShortName">byte_ready</obj_property>
+         <obj_property name="ObjectShortName">byte_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/byte_done" type="logic">
+         <obj_property name="ElementShortName">byte_done</obj_property>
+         <obj_property name="ObjectShortName">byte_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/led_toggle" type="logic">
+         <obj_property name="ElementShortName">led_toggle</obj_property>
+         <obj_property name="ObjectShortName">led_toggle</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/br_counter" type="array">
+         <obj_property name="ElementShortName">br_counter[11:0]</obj_property>
+         <obj_property name="ObjectShortName">br_counter[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/pause_counter" type="array">
+         <obj_property name="ElementShortName">pause_counter[24:0]</obj_property>
+         <obj_property name="ObjectShortName">pause_counter[24:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/bit_counter" type="array">
+         <obj_property name="ElementShortName">bit_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/tx_reg" type="array">
+         <obj_property name="ElementShortName">tx_reg[9:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_reg[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_phy_inst/BR_COUNTER_MAX" type="array">
+         <obj_property name="ElementShortName">BR_COUNTER_MAX[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR_COUNTER_MAX[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group541" type="group">
+      <obj_property name="label">TX_MAC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/o_r_reg_data" type="array">
+         <obj_property name="ElementShortName">o_r_reg_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_r_reg_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/i_tx_mac_vec" type="array">
+         <obj_property name="ElementShortName">i_tx_mac_vec[135:0]</obj_property>
+         <obj_property name="ObjectShortName">i_tx_mac_vec[135:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/o_tx_phy_str" type="logic">
+         <obj_property name="ElementShortName">o_tx_phy_str</obj_property>
+         <obj_property name="ObjectShortName">o_tx_phy_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/i_tx_phy_ready" type="logic">
+         <obj_property name="ElementShortName">i_tx_phy_ready</obj_property>
+         <obj_property name="ObjectShortName">i_tx_phy_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/i_tx_phy_done" type="logic">
+         <obj_property name="ElementShortName">i_tx_phy_done</obj_property>
+         <obj_property name="ObjectShortName">i_tx_phy_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/o_tx_phy_vec" type="array">
+         <obj_property name="ElementShortName">o_tx_phy_vec[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_tx_phy_vec[7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/i_tx_mac_str" type="logic">
+         <obj_property name="ElementShortName">i_tx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">i_tx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/o_tx_mac_ready" type="logic">
+         <obj_property name="ElementShortName">o_tx_mac_ready</obj_property>
+         <obj_property name="ObjectShortName">o_tx_mac_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/o_tx_mac_done" type="logic">
+         <obj_property name="ElementShortName">o_tx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">o_tx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/frame_to_send" type="array">
+         <obj_property name="ElementShortName">frame_to_send[135:0]</obj_property>
+         <obj_property name="ObjectShortName">frame_to_send[135:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/byte_index" type="array">
+         <obj_property name="ElementShortName">byte_index[4:0]</obj_property>
+         <obj_property name="ObjectShortName">byte_index[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/last_byte_done_pulse" type="logic">
+         <obj_property name="ElementShortName">last_byte_done_pulse</obj_property>
+         <obj_property name="ObjectShortName">last_byte_done_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Tx_mac_inst/bytes_transmited_cnt" type="array">
+         <obj_property name="ElementShortName">bytes_transmited_cnt</obj_property>
+         <obj_property name="ObjectShortName">bytes_transmited_cnt</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group542" type="group">
+      <obj_property name="label">RX_PHY</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/i_rx_line" type="logic">
+         <obj_property name="ElementShortName">i_rx_line</obj_property>
+         <obj_property name="ObjectShortName">i_rx_line</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/o_rx_phy_vec" type="array">
+         <obj_property name="ElementShortName">o_rx_phy_vec[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rx_phy_vec[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/o_rx_phy_done" type="logic">
+         <obj_property name="ElementShortName">o_rx_phy_done</obj_property>
+         <obj_property name="ObjectShortName">o_rx_phy_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/o_rx_mac_str" type="logic">
+         <obj_property name="ElementShortName">o_rx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">o_rx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/sample_en" type="logic">
+         <obj_property name="ElementShortName">sample_en</obj_property>
+         <obj_property name="ObjectShortName">sample_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/busy_en" type="logic">
+         <obj_property name="ElementShortName">busy_en</obj_property>
+         <obj_property name="ObjectShortName">busy_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/br16_pulse" type="logic">
+         <obj_property name="ElementShortName">br16_pulse</obj_property>
+         <obj_property name="ObjectShortName">br16_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/rx_bit_pulse" type="logic">
+         <obj_property name="ElementShortName">rx_bit_pulse</obj_property>
+         <obj_property name="ObjectShortName">rx_bit_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/rx_str_pulse" type="logic">
+         <obj_property name="ElementShortName">rx_str_pulse</obj_property>
+         <obj_property name="ObjectShortName">rx_str_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/rx_busy_pulse" type="logic">
+         <obj_property name="ElementShortName">rx_busy_pulse</obj_property>
+         <obj_property name="ObjectShortName">rx_busy_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/rx_done_pulse" type="logic">
+         <obj_property name="ElementShortName">rx_done_pulse</obj_property>
+         <obj_property name="ObjectShortName">rx_done_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/br16_acc" type="array">
+         <obj_property name="ElementShortName">br16_acc[27:0]</obj_property>
+         <obj_property name="ObjectShortName">br16_acc[27:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/br16_pulse_cnt" type="array">
+         <obj_property name="ElementShortName">br16_pulse_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">br16_pulse_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/stage" type="logic">
+         <obj_property name="ElementShortName">stage</obj_property>
+         <obj_property name="ObjectShortName">stage</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/rx_data" type="logic">
+         <obj_property name="ElementShortName">rx_data</obj_property>
+         <obj_property name="ObjectShortName">rx_data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/sample_counter" type="array">
+         <obj_property name="ElementShortName">sample_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/sample_reg" type="array">
+         <obj_property name="ElementShortName">sample_reg[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_reg[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/bit_counter" type="array">
+         <obj_property name="ElementShortName">bit_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/temp_rx_vec" type="array">
+         <obj_property name="ElementShortName">temp_rx_vec[9:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_rx_vec[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/RX_BR" type="array">
+         <obj_property name="ElementShortName">RX_BR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RX_BR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/BR16_PULSE_CNT" type="array">
+         <obj_property name="ElementShortName">BR16_PULSE_CNT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR16_PULSE_CNT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/RX_LEN" type="array">
+         <obj_property name="ElementShortName">RX_LEN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RX_LEN[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/BR16" type="array">
+         <obj_property name="ElementShortName">BR16[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR16[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_phy_inst/CLK_FREQ" type="array">
+         <obj_property name="ElementShortName">CLK_FREQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_FREQ[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group543" type="group">
+      <obj_property name="label">RX_MAC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/r_data" type="array">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/frame_data" type="array">
+         <obj_property name="ElementShortName">frame_data[223:0]</obj_property>
+         <obj_property name="ObjectShortName">frame_data[223:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/rx_mac_done" type="logic">
+         <obj_property name="ElementShortName">rx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">rx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/rx_phy_done" type="logic">
+         <obj_property name="ElementShortName">rx_phy_done</obj_property>
+         <obj_property name="ObjectShortName">rx_phy_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/rx_mac_str" type="logic">
+         <obj_property name="ElementShortName">rx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">rx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/rx_vec" type="array">
+         <obj_property name="ElementShortName">rx_vec[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_vec[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/write_ptr" type="array">
+         <obj_property name="ElementShortName">write_ptr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">write_ptr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/temp_frame_reg" type="array">
+         <obj_property name="ElementShortName">temp_frame_reg[223:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_frame_reg[223:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_uart_wrapper/uut/Rx_mac_inst/bytes_recived_cnt" type="array">
+         <obj_property name="ElementShortName">bytes_recived_cnt</obj_property>
+         <obj_property name="ObjectShortName">bytes_recived_cnt</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

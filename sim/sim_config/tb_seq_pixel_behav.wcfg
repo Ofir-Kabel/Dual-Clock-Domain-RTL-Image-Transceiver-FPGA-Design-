@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_seq_pixel_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fifo_defs_pkg" />
+            <top_module name="glbl" />
+            <top_module name="pixel_mem_pkg" />
+            <top_module name="regs_pkg" />
+            <top_module name="tb_seq_pixel" />
+            <top_module name="uart_defs_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="355.401 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="322"></NameColumnWidth>
+      <ValueColumnWidth column_width="200"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group2798" type="group">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/i_almost_full" type="logic">
+         <obj_property name="ElementShortName">i_almost_full</obj_property>
+         <obj_property name="ObjectShortName">i_almost_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/comp" type="logic">
+         <obj_property name="ElementShortName">comp</obj_property>
+         <obj_property name="ObjectShortName">comp</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/wr_pixel" type="logic">
+         <obj_property name="ElementShortName">wr_pixel</obj_property>
+         <obj_property name="ObjectShortName">wr_pixel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/i_pixel_addr" type="array">
+         <obj_property name="ElementShortName">i_pixel_addr[23:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pixel_addr[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/i_pixel_data" type="array">
+         <obj_property name="ElementShortName">i_pixel_data[23:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pixel_data[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/o_red_data" type="array">
+         <obj_property name="ElementShortName">o_red_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_red_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/o_green_data" type="array">
+         <obj_property name="ElementShortName">o_green_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_green_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/o_blue_data" type="array">
+         <obj_property name="ElementShortName">o_blue_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_blue_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/pixel_pkt_load" type="logic">
+         <obj_property name="ElementShortName">pixel_pkt_load</obj_property>
+         <obj_property name="ObjectShortName">pixel_pkt_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/row_index" type="array">
+         <obj_property name="ElementShortName">row_index[7:0]</obj_property>
+         <obj_property name="ObjectShortName">row_index[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/col_index" type="array">
+         <obj_property name="ElementShortName">col_index[7:0]</obj_property>
+         <obj_property name="ObjectShortName">col_index[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/o_done" type="logic">
+         <obj_property name="ElementShortName">o_done</obj_property>
+         <obj_property name="ObjectShortName">o_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/cycle_cnt" type="array">
+         <obj_property name="ElementShortName">cycle_cnt[1:0]</obj_property>
+         <obj_property name="ObjectShortName">cycle_cnt[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/col_temp" type="array">
+         <obj_property name="ElementShortName">col_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">col_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/col_mod" type="array">
+         <obj_property name="ElementShortName">col_mod[1:0]</obj_property>
+         <obj_property name="ObjectShortName">col_mod[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/PIXEL_INX_0_H" type="array">
+         <obj_property name="ElementShortName">PIXEL_INX_0_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_INX_0_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/PIXEL_INX_0_L" type="array">
+         <obj_property name="ElementShortName">PIXEL_INX_0_L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_INX_0_L[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/PIXEL_INX_1_H" type="array">
+         <obj_property name="ElementShortName">PIXEL_INX_1_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_INX_1_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/PIXEL_INX_1_L" type="array">
+         <obj_property name="ElementShortName">PIXEL_INX_1_L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_INX_1_L[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/PIXEL_INX_2_H" type="array">
+         <obj_property name="ElementShortName">PIXEL_INX_2_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_INX_2_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/PIXEL_INX_2_L" type="array">
+         <obj_property name="ElementShortName">PIXEL_INX_2_L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_INX_2_L[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/PIXEL_INX_3_H" type="array">
+         <obj_property name="ElementShortName">PIXEL_INX_3_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_INX_3_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_mem_inst/PIXEL_INX_3_L" type="array">
+         <obj_property name="ElementShortName">PIXEL_INX_3_L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_INX_3_L[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2717" type="group">
+      <obj_property name="label">SEQ</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/btnc_r" type="logic">
+         <obj_property name="ElementShortName">btnc_r</obj_property>
+         <obj_property name="ObjectShortName">btnc_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/w_clk" type="logic">
+         <obj_property name="ElementShortName">w_clk</obj_property>
+         <obj_property name="ObjectShortName">w_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/w_rst_n" type="logic">
+         <obj_property name="ElementShortName">w_rst_n</obj_property>
+         <obj_property name="ObjectShortName">w_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/r_clk" type="logic">
+         <obj_property name="ElementShortName">r_clk</obj_property>
+         <obj_property name="ObjectShortName">r_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/r_rst_n" type="logic">
+         <obj_property name="ElementShortName">r_rst_n</obj_property>
+         <obj_property name="ObjectShortName">r_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/wr_en" type="logic">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/wr_pixel" type="logic">
+         <obj_property name="ElementShortName">wr_pixel</obj_property>
+         <obj_property name="ObjectShortName">wr_pixel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/wr_pixel_done" type="logic">
+         <obj_property name="ElementShortName">wr_pixel_done</obj_property>
+         <obj_property name="ObjectShortName">wr_pixel_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_sel_r" type="logic">
+         <obj_property name="ElementShortName">img_sel_r</obj_property>
+         <obj_property name="ObjectShortName">img_sel_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/w_data" type="array">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/r_data_fifo" type="array">
+         <obj_property name="ElementShortName">r_data_fifo[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_fifo[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/r_data_img" type="array">
+         <obj_property name="ElementShortName">r_data_img[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_img[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/addr" type="array">
+         <obj_property name="ElementShortName">addr[23:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/i_pixel_data" type="array">
+         <obj_property name="ElementShortName">i_pixel_data[23:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pixel_data[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/read_cmd" type="logic">
+         <obj_property name="ElementShortName">read_cmd</obj_property>
+         <obj_property name="ObjectShortName">read_cmd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/r_data_msg" type="array">
+         <obj_property name="ElementShortName">r_data_msg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_msg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/ready" type="logic">
+         <obj_property name="ElementShortName">ready</obj_property>
+         <obj_property name="ObjectShortName">ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/read" type="logic">
+         <obj_property name="ElementShortName">read</obj_property>
+         <obj_property name="ObjectShortName">read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/trans" type="logic">
+         <obj_property name="ElementShortName">trans</obj_property>
+         <obj_property name="ObjectShortName">trans</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/comp" type="logic">
+         <obj_property name="ElementShortName">comp</obj_property>
+         <obj_property name="ObjectShortName">comp</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/tx_mac_ready" type="logic">
+         <obj_property name="ElementShortName">tx_mac_ready</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/tx_mac_done" type="logic">
+         <obj_property name="ElementShortName">tx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/tx_mac_vec" type="array">
+         <obj_property name="ElementShortName">tx_mac_vec[127:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_vec[127:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/tx_mac_str" type="logic">
+         <obj_property name="ElementShortName">tx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_rts" type="logic">
+         <obj_property name="ElementShortName">o_rts</obj_property>
+         <obj_property name="ObjectShortName">o_rts</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_status_r" type="array">
+         <obj_property name="ElementShortName">img_status_r</obj_property>
+         <obj_property name="ObjectShortName">img_status_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_status_r_v" type="array">
+         <obj_property name="ElementShortName">img_status_r_v</obj_property>
+         <obj_property name="ObjectShortName">img_status_r_v</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_tx_mon_r" type="array">
+         <obj_property name="ElementShortName">img_tx_mon_r</obj_property>
+         <obj_property name="ObjectShortName">img_tx_mon_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_tx_mon_r_v" type="array">
+         <obj_property name="ElementShortName">img_tx_mon_r_v</obj_property>
+         <obj_property name="ObjectShortName">img_tx_mon_r_v</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_ctrl_r" type="array">
+         <obj_property name="ElementShortName">img_ctrl_r</obj_property>
+         <obj_property name="ObjectShortName">img_ctrl_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_ctrl_r_v" type="array">
+         <obj_property name="ElementShortName">img_ctrl_r_v</obj_property>
+         <obj_property name="ObjectShortName">img_ctrl_r_v</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_almost_full_w" type="logic">
+         <obj_property name="ElementShortName">o_almost_full_w</obj_property>
+         <obj_property name="ObjectShortName">o_almost_full_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pixel_pkt_load" type="logic">
+         <obj_property name="ElementShortName">pixel_pkt_load</obj_property>
+         <obj_property name="ObjectShortName">pixel_pkt_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/addr_low" type="array">
+         <obj_property name="ElementShortName">addr_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/row_index" type="array">
+         <obj_property name="ElementShortName">row_index[7:0]</obj_property>
+         <obj_property name="ObjectShortName">row_index[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/col_index" type="array">
+         <obj_property name="ElementShortName">col_index[7:0]</obj_property>
+         <obj_property name="ObjectShortName">col_index[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_rom_red" type="array">
+         <obj_property name="ElementShortName">o_rom_red[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_red[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_rom_green" type="array">
+         <obj_property name="ElementShortName">o_rom_green[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_green[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_rom_blue" type="array">
+         <obj_property name="ElementShortName">o_rom_blue[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_blue[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pop" type="logic">
+         <obj_property name="ElementShortName">pop</obj_property>
+         <obj_property name="ObjectShortName">pop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/fifo_dout" type="array">
+         <obj_property name="ElementShortName">fifo_dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_dout[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_fifo_data" type="array">
+         <obj_property name="ElementShortName">o_fifo_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_fifo_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/fifo_din" type="array">
+         <obj_property name="ElementShortName">fifo_din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_din[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_full_w" type="logic">
+         <obj_property name="ElementShortName">o_full_w</obj_property>
+         <obj_property name="ObjectShortName">o_full_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_half_full" type="logic">
+         <obj_property name="ElementShortName">o_half_full</obj_property>
+         <obj_property name="ObjectShortName">o_half_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_almost_empty_r" type="logic">
+         <obj_property name="ElementShortName">o_almost_empty_r</obj_property>
+         <obj_property name="ObjectShortName">o_almost_empty_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/o_empty_r" type="logic">
+         <obj_property name="ElementShortName">o_empty_r</obj_property>
+         <obj_property name="ObjectShortName">o_empty_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/fifo_write_en" type="logic">
+         <obj_property name="ElementShortName">fifo_write_en</obj_property>
+         <obj_property name="ObjectShortName">fifo_write_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/i_fifo_red_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_red_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_red_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/i_fifo_green_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_green_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_green_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/i_fifo_blue_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_blue_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_blue_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/write_sub_pixel" type="array">
+         <obj_property name="ElementShortName">write_sub_pixel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">write_sub_pixel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_trans" type="logic">
+         <obj_property name="ElementShortName">img_trans</obj_property>
+         <obj_property name="ObjectShortName">img_trans</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/img_done_trans" type="logic">
+         <obj_property name="ElementShortName">img_done_trans</obj_property>
+         <obj_property name="ObjectShortName">img_done_trans</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/r_img_writing_err" type="logic">
+         <obj_property name="ElementShortName">r_img_writing_err</obj_property>
+         <obj_property name="ObjectShortName">r_img_writing_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/r_img_reading_err" type="logic">
+         <obj_property name="ElementShortName">r_img_reading_err</obj_property>
+         <obj_property name="ObjectShortName">r_img_reading_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/done_col" type="logic">
+         <obj_property name="ElementShortName">done_col</obj_property>
+         <obj_property name="ObjectShortName">done_col</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/done_row" type="logic">
+         <obj_property name="ElementShortName">done_row</obj_property>
+         <obj_property name="ObjectShortName">done_row</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/pop_cond" type="logic">
+         <obj_property name="ElementShortName">pop_cond</obj_property>
+         <obj_property name="ObjectShortName">pop_cond</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/fifo_sel_r" type="logic">
+         <obj_property name="ElementShortName">fifo_sel_r</obj_property>
+         <obj_property name="ObjectShortName">fifo_sel_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/ST_WIDTH_MSB" type="array">
+         <obj_property name="ElementShortName">ST_WIDTH_MSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ST_WIDTH_MSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/ST_WIDTH_LSB" type="array">
+         <obj_property name="ElementShortName">ST_WIDTH_LSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ST_WIDTH_LSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/ST_HEIGHT_MSB" type="array">
+         <obj_property name="ElementShortName">ST_HEIGHT_MSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ST_HEIGHT_MSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/ST_HEIGHT_LSB" type="array">
+         <obj_property name="ElementShortName">ST_HEIGHT_LSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ST_HEIGHT_LSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/MON_COL_MSB" type="array">
+         <obj_property name="ElementShortName">MON_COL_MSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MON_COL_MSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/MON_COL_LSB" type="array">
+         <obj_property name="ElementShortName">MON_COL_LSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MON_COL_LSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/MON_ROW_MSB" type="array">
+         <obj_property name="ElementShortName">MON_ROW_MSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MON_ROW_MSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/MON_ROW_LSB" type="array">
+         <obj_property name="ElementShortName">MON_ROW_LSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MON_ROW_LSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/CTRL_START_BIT" type="array">
+         <obj_property name="ElementShortName">CTRL_START_BIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTRL_START_BIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/R_IMG_STATUS_ADDR" type="array">
+         <obj_property name="ElementShortName">R_IMG_STATUS_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_IMG_STATUS_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/R_IMG_TX_MON_ADDR" type="array">
+         <obj_property name="ElementShortName">R_IMG_TX_MON_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_IMG_TX_MON_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/R_IMG_CTRL_ADDR" type="array">
+         <obj_property name="ElementShortName">R_IMG_CTRL_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_IMG_CTRL_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/DATA_HH" type="array">
+         <obj_property name="ElementShortName">DATA_HH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_HH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/DATA_HL" type="array">
+         <obj_property name="ElementShortName">DATA_HL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_HL[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/DATA_LH" type="array">
+         <obj_property name="ElementShortName">DATA_LH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_LH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_seq_pixel/DUT_SEQ/DATA_LL" type="array">
+         <obj_property name="ElementShortName">DATA_LL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_LL[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

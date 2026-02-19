@@ -1,0 +1,1060 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Feb 14 22:12:34 2026
+# Process ID: 5624
+# Current directory: C:/VerilogRTLCourse/lab12/scripts
+# Command line: vivado.exe -mode batch -notrace -source C:\VerilogRTLCourse\lab12\scripts\full_ff_analysis.tcl -tclargs C:\VivadoProjects\Projects\VerilogRTLCourse\lab12\lab12.xpr
+# Log file: C:/VerilogRTLCourse/lab12/scripts/vivado.log
+# Journal file: C:/VerilogRTLCourse/lab12/scripts\vivado.jou
+# Running On: OYK_LP, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 12, Host memory: 16783 MB
+#-----------------------------------------------------------
+source {C:\VerilogRTLCourse\lab12\scripts\full_ff_analysis.tcl} -notrace
+
+========================================================
+ TCL WORKER: Processing Project
+========================================================
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vitis/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 459.500 ; gain = 123.801
+INFO: Opening RTL Design (Elaboration)...
+Design is defaulting to project part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Vitis/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'RX_CLK_FREQ' is used before its declaration [C:/VerilogRTLCourse/lab12/design/packages/uart_defs_pkg.sv:12]
+WARNING: [Synth 8-6901] identifier 'RX_CLK_FREQ' is used before its declaration [C:/VerilogRTLCourse/lab12/design/packages/uart_defs_pkg.sv:13]
+INFO: [Synth 8-11241] undeclared symbol 'led_err', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:201]
+INFO: [Synth 8-11241] undeclared symbol 'ttrx_clk', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:266]
+INFO: [Synth 8-11241] undeclared symbol 'ttrx_rst_n', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:268]
+INFO: [Synth 8-11241] undeclared symbol 'en', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:270]
+INFO: [Synth 8-11241] undeclared symbol 'din', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:271]
+INFO: [Synth 8-11241] undeclared symbol 'dout', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:272]
+INFO: [Synth 8-11241] undeclared symbol 'fifo_sel_r', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:145]
+INFO: [Synth 8-11241] undeclared symbol 'LED_TOGGLE', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:119]
+INFO: [Synth 8-11241] undeclared symbol 'rx_mac_done_sync', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:162]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1279.777 ; gain = 423.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'uart_wrapper' [C:/VerilogRTLCourse/lab12/design/rtl/uart_wrapper.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Tx_mac_v0' [C:/VerilogRTLCourse/lab12/design/rtl/Tx_mac_v0.sv:6]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/Tx_mac_v0.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'Tx_mac_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/Tx_mac_v0.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'Tx_phy_v0' [C:/VerilogRTLCourse/lab12/design/rtl/Tx_phy_v0.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/Tx_phy_v0.sv:42]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/Tx_phy_v0.sv:73]
+INFO: [Synth 8-6155] done synthesizing module 'Tx_phy_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/Tx_phy_v0.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Rx_mac' [C:/VerilogRTLCourse/lab12/design/rtl/Rx_mac.sv:4]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/Rx_mac.sv:75]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/Rx_mac.sv:75]
+INFO: [Synth 8-6155] done synthesizing module 'Rx_mac' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/Rx_mac.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'Rx_phy_v0' [C:/VerilogRTLCourse/lab12/design/rtl/Rx_phy_v0.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/Rx_phy_v0.sv:175]
+INFO: [Synth 8-6155] done synthesizing module 'Rx_phy_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/Rx_phy_v0.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'uart_wrapper' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/uart_wrapper.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'msg_parser_v0' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mux_sync' [C:/VerilogRTLCourse/lab12/design/rtl/mux_sync.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'mux_sync' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/mux_sync.sv:5]
+WARNING: [Synth 8-689] width (1) of port connection 'dout' does not match port width (32) of module 'mux_sync' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:272]
+INFO: [Synth 8-6155] done synthesizing module 'msg_parser_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'addr_selection' [C:/VerilogRTLCourse/lab12/design/rtl/addr_selection.sv:6]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/addr_selection.sv:40]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/addr_selection.sv:114]
+INFO: [Synth 8-6155] done synthesizing module 'addr_selection' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/addr_selection.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'sequencer' [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'pixel_mem_v0' [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:4]
+INFO: [Synth 8-3876] $readmem data file 'red_hex.mem' is read successfully [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:33]
+INFO: [Synth 8-3876] $readmem data file 'green_hex.mem' is read successfully [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:34]
+INFO: [Synth 8-3876] $readmem data file 'blue_hex.mem' is read successfully [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:35]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:84]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_mem_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'fifo_async' [C:/VerilogRTLCourse/lab12/design/rtl/fifo_async.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/fifo_async.sv:69]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/fifo_async.sv:75]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_async' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/fifo_async.sv:5]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:261]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:346]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:346]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:461]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:461]
+INFO: [Synth 8-6155] done synthesizing module 'sequencer' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'rst_sync_pll' [C:/VerilogRTLCourse/lab12/design/rtl/rst_sync_pll.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'rst_n_sync' [C:/VerilogRTLCourse/lab12/design/rtl/rst_n_sync.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'rst_n_sync' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/rst_n_sync.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'BUFGMUX' [C:/Vitis/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1182]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGMUX' (0#1) [C:/Vitis/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1182]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/VerilogRTLCourse/lab12/scripts/.Xil/Vivado-5624-OYK_LP/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/VerilogRTLCourse/lab12/scripts/.Xil/Vivado-5624-OYK_LP/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rst_sync_pll' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/rst_sync_pll.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:4]
+WARNING: [Synth 8-6014] Unused sequential element rgb_valid_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:180]
+WARNING: [Synth 8-6014] Unused sequential element rgb_valid_d_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:214]
+WARNING: [Synth 8-6014] Unused sequential element led_valid_d_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:215]
+WARNING: [Synth 8-3848] Net rx_mac_done_sync in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:16]
+WARNING: [Synth 8-3848] Net ttrx_clk in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:266]
+WARNING: [Synth 8-3848] Net ttrx_rst_n in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:268]
+WARNING: [Synth 8-3848] Net en in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:270]
+WARNING: [Synth 8-3848] Net din in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:271]
+WARNING: [Synth 8-6014] Unused sequential element red_mem_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:143]
+WARNING: [Synth 8-6014] Unused sequential element green_mem_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:144]
+WARNING: [Synth 8-6014] Unused sequential element blue_mem_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:145]
+WARNING: [Synth 8-6014] Unused sequential element img_ctrl_r_reg[reserved] was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:103]
+WARNING: [Synth 8-6014] Unused sequential element r_img_writing_err_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:259]
+WARNING: [Synth 8-3848] Net o_rts in module/entity sequencer does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:45]
+WARNING: [Synth 8-3848] Net fifo_sel_r in module/entity sequencer does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:145]
+WARNING: [Synth 8-3848] Net r_data_pwm in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:67]
+WARNING: [Synth 8-3848] Net r_data_led in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:68]
+WARNING: [Synth 8-3848] Net sys_cfg_r[sw_enable] in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:347]
+WARNING: [Synth 8-3848] Net sys_cfg_r[sys_rst_n] in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:347]
+WARNING: [Synth 8-3848] Net sys_cfg_r[reserved] in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:347]
+WARNING: [Synth 8-7129] Port w_data[31] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[30] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[29] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[28] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[27] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[26] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[25] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[24] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[23] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[22] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[21] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[20] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[19] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[18] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[17] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[16] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[15] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[14] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[13] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[12] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[11] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[10] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[9] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[8] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[7] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[6] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[5] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[4] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[3] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[2] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_rts in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_read_valid in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_mac_ready in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module addr_selection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module addr_selection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_mac_done_sync in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[47] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[46] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[45] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[44] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[43] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[42] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[41] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[40] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[7] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[6] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[5] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[4] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[3] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[2] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[1] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[0] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[31] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[30] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[29] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[28] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[27] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[26] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[25] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[24] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[23] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[22] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[21] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[20] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[19] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[18] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[17] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[16] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[15] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[14] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[13] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[12] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[11] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[10] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[9] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[8] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[7] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[6] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[5] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[4] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[3] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[2] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[1] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[0] in module uart_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1394.117 ; gain = 537.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1394.117 ; gain = 537.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1394.117 ; gain = 537.844
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'rst_sync_pll_inst/clk_wiz_0_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1399.867 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, rst_sync_pll_inst/clk_wiz_0_inst/inst/clkin1_ibufg, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'rst_sync_pll_inst/clk_wiz_0_inst/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst/inst'
+Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED_TOGGLE'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[6]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[5]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[4]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[3]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[2]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[1]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[0]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:82]
+Finished Parsing XDC File [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1519.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instance 
+
+open_rtl_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1519.309 ; gain = 1059.809
+✅ Elaboration list exported.
+INFO: Resetting and launching Synthesis...
+INFO: [Project 1-1161] Replacing file C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.srcs/utils_1/imports/synth_1/top.dcp with file C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.runs/synth_1/top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.runs/synth_1
+
+[Sat Feb 14 22:13:02 2026] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.runs/synth_1/runme.log
+[Sat Feb 14 22:13:02 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 428.672 ; gain = 77.742
+Command: read_checkpoint -auto_incremental -incremental C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13492
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Vitis/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'RX_CLK_FREQ' is used before its declaration [C:/VerilogRTLCourse/lab12/design/packages/uart_defs_pkg.sv:12]
+WARNING: [Synth 8-6901] identifier 'RX_CLK_FREQ' is used before its declaration [C:/VerilogRTLCourse/lab12/design/packages/uart_defs_pkg.sv:13]
+INFO: [Synth 8-11241] undeclared symbol 'led_err', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:201]
+INFO: [Synth 8-11241] undeclared symbol 'ttrx_clk', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:266]
+INFO: [Synth 8-11241] undeclared symbol 'ttrx_rst_n', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:268]
+INFO: [Synth 8-11241] undeclared symbol 'en', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:270]
+INFO: [Synth 8-11241] undeclared symbol 'din', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:271]
+INFO: [Synth 8-11241] undeclared symbol 'dout', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:272]
+INFO: [Synth 8-11241] undeclared symbol 'fifo_sel_r', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:145]
+INFO: [Synth 8-11241] undeclared symbol 'LED_TOGGLE', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:119]
+INFO: [Synth 8-11241] undeclared symbol 'rx_mac_done_sync', assumed default net type 'wire' [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:162]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1265.613 ; gain = 409.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'uart_wrapper' [C:/VerilogRTLCourse/lab12/design/rtl/uart_wrapper.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Tx_mac_v0' [C:/VerilogRTLCourse/lab12/design/rtl/Tx_mac_v0.sv:6]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/Tx_mac_v0.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'Tx_mac_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/Tx_mac_v0.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'Tx_phy_v0' [C:/VerilogRTLCourse/lab12/design/rtl/Tx_phy_v0.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/Tx_phy_v0.sv:42]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/Tx_phy_v0.sv:73]
+INFO: [Synth 8-6155] done synthesizing module 'Tx_phy_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/Tx_phy_v0.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Rx_mac' [C:/VerilogRTLCourse/lab12/design/rtl/Rx_mac.sv:4]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/Rx_mac.sv:75]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/Rx_mac.sv:75]
+INFO: [Synth 8-6155] done synthesizing module 'Rx_mac' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/Rx_mac.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'Rx_phy_v0' [C:/VerilogRTLCourse/lab12/design/rtl/Rx_phy_v0.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/Rx_phy_v0.sv:175]
+INFO: [Synth 8-6155] done synthesizing module 'Rx_phy_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/Rx_phy_v0.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'uart_wrapper' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/uart_wrapper.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'msg_parser_v0' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mux_sync' [C:/VerilogRTLCourse/lab12/design/rtl/mux_sync.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'mux_sync' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/mux_sync.sv:5]
+WARNING: [Synth 8-689] width (1) of port connection 'dout' does not match port width (32) of module 'mux_sync' [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:272]
+INFO: [Synth 8-6155] done synthesizing module 'msg_parser_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'addr_selection' [C:/VerilogRTLCourse/lab12/design/rtl/addr_selection.sv:6]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/addr_selection.sv:40]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/addr_selection.sv:114]
+INFO: [Synth 8-6155] done synthesizing module 'addr_selection' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/addr_selection.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'sequencer' [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'pixel_mem_v0' [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:4]
+INFO: [Synth 8-3876] $readmem data file 'red_hex.mem' is read successfully [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:33]
+INFO: [Synth 8-3876] $readmem data file 'green_hex.mem' is read successfully [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:34]
+INFO: [Synth 8-3876] $readmem data file 'blue_hex.mem' is read successfully [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:35]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:84]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_mem_v0' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'fifo_async' [C:/VerilogRTLCourse/lab12/design/rtl/fifo_async.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/fifo_async.sv:69]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/fifo_async.sv:75]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_async' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/fifo_async.sv:5]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:261]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:346]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:346]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:461]
+INFO: [Synth 8-226] default block is never used [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:461]
+INFO: [Synth 8-6155] done synthesizing module 'sequencer' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'rst_sync_pll' [C:/VerilogRTLCourse/lab12/design/rtl/rst_sync_pll.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'rst_n_sync' [C:/VerilogRTLCourse/lab12/design/rtl/rst_n_sync.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'rst_n_sync' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/rst_n_sync.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'BUFGMUX' [C:/Vitis/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1182]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGMUX' (0#1) [C:/Vitis/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1182]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.runs/synth_1/.Xil/Vivado-14832-OYK_LP/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.runs/synth_1/.Xil/Vivado-14832-OYK_LP/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rst_sync_pll' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/rst_sync_pll.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:4]
+WARNING: [Synth 8-6014] Unused sequential element rgb_valid_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:180]
+WARNING: [Synth 8-6014] Unused sequential element rgb_valid_d_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:214]
+WARNING: [Synth 8-6014] Unused sequential element led_valid_d_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:215]
+WARNING: [Synth 8-3848] Net rx_mac_done_sync in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:16]
+WARNING: [Synth 8-3848] Net ttrx_clk in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:266]
+WARNING: [Synth 8-3848] Net ttrx_rst_n in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:268]
+WARNING: [Synth 8-3848] Net en in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:270]
+WARNING: [Synth 8-3848] Net din in module/entity msg_parser_v0 does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/msg_parser_v0.sv:271]
+WARNING: [Synth 8-6014] Unused sequential element red_mem_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:143]
+WARNING: [Synth 8-6014] Unused sequential element green_mem_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:144]
+WARNING: [Synth 8-6014] Unused sequential element blue_mem_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/pixel_mem_v0.sv:145]
+WARNING: [Synth 8-6014] Unused sequential element img_ctrl_r_reg[reserved] was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:103]
+WARNING: [Synth 8-6014] Unused sequential element r_img_writing_err_reg was removed.  [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:259]
+WARNING: [Synth 8-3848] Net o_rts in module/entity sequencer does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:45]
+WARNING: [Synth 8-3848] Net fifo_sel_r in module/entity sequencer does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/sequencer.sv:145]
+WARNING: [Synth 8-3848] Net r_data_pwm in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:67]
+WARNING: [Synth 8-3848] Net r_data_led in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:68]
+WARNING: [Synth 8-3848] Net sys_cfg_r[sw_enable] in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:347]
+WARNING: [Synth 8-3848] Net sys_cfg_r[sys_rst_n] in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:347]
+WARNING: [Synth 8-3848] Net sys_cfg_r[reserved] in module/entity top does not have driver. [C:/VerilogRTLCourse/lab12/design/rtl/top.sv:347]
+WARNING: [Synth 8-7129] Port w_data[31] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[30] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[29] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[28] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[27] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[26] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[25] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[24] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[23] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[22] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[21] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[20] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[19] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[18] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[17] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[16] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[15] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[14] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[13] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[12] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[11] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[10] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[9] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[8] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[7] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[6] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[5] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[4] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[3] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[2] in module fifo_async is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_rts in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_read_valid in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_mac_ready in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module addr_selection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_n in module addr_selection is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_mac_done_sync in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[47] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[46] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[45] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[44] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[43] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[42] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[41] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[40] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[7] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[6] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[5] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[4] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[3] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[2] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[1] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frame_data[0] in module msg_parser_v0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[31] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[30] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[29] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[28] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[27] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[26] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[25] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[24] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[23] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[22] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[21] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[20] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[19] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[18] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[17] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[16] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[15] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[14] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[13] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[12] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[11] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[10] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[9] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[8] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[7] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[6] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[5] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[4] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[3] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[2] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[1] in module uart_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_w_data[0] in module uart_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1394.219 ; gain = 538.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1394.219 ; gain = 538.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1394.219 ; gain = 538.016
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1394.219 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst'
+Finished Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst'
+Parsing XDC File [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED_TOGGLE'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[6]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[5]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[4]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[3]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[2]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[1]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'SEG7[0]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:82]
+Finished Parsing XDC File [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1459.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1459.902 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Vitis/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1459.902 ; gain = 603.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1459.902 ; gain = 603.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for rst_sync_pll_inst/clk_wiz_0_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1459.902 ; gain = 603.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pst_reg' in module 'Tx_mac_v0'
+INFO: [Synth 8-802] inferred FSM for state register 'pst_reg' in module 'Tx_phy_v0'
+INFO: [Synth 8-802] inferred FSM for state register 'pst_reg' in module 'Rx_mac'
+INFO: [Synth 8-802] inferred FSM for state register 'pst_reg' in module 'Rx_phy_v0'
+INFO: [Synth 8-802] inferred FSM for state register 'pst_reg' in module 'sequencer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+              SEND_FRAME |                               01 |                               01
+              TRANS_DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pst_reg' using encoding 'sequential' in module 'Tx_mac_v0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                    BUSY |                               01 |                               01
+                  FINISH |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pst_reg' using encoding 'sequential' in module 'Tx_phy_v0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+             CHECK_START |                               01 |                               01
+                 PAYLOAD |                               10 |                               10
+               END_FRAME |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pst_reg' using encoding 'sequential' in module 'Rx_mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                  SAMPLE |                             0010 |                               01
+                    BUSY |                             0100 |                               10
+                  END_RX |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pst_reg' using encoding 'one-hot' in module 'Rx_phy_v0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                 PIX_MSG |                               01 |                               11
+                 IMG_MSG |                               10 |                               01
+                 RGF_MSG |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pst_reg' using encoding 'sequential' in module 'sequencer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1459.902 ; gain = 603.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   6 Input    8 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 4     
+	   3 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      5 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+	               32 Bit    Registers := 16    
+	               30 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 54    
++---RAMs : 
+	             512K Bit	(16389 X 32 bit)          RAMs := 3     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   3 Input  128 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 4     
+	   4 Input  128 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 14    
+	   3 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   29 Bit        Muxes := 1     
+	   4 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 6     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 10    
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 33    
+	   3 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 11    
+	   2 Input    1 Bit        Muxes := 41    
+	   4 Input    1 Bit        Muxes := 13    
+	   8 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port o_rts in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[31] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[30] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[29] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[28] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[27] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[26] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[25] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[24] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[23] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[22] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[21] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[19] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[18] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[17] in module sequencer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w_data[16] in module sequencer is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1459.902 ; gain = 603.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sequencer_inst | pixel_mem_v0_inst/red_rom_reg   | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
+|sequencer_inst | pixel_mem_v0_inst/green_rom_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
+|sequencer_inst | pixel_mem_v0_inst/blue_rom_reg  | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
+|sequencer_inst | fifo_asycn_inst/mem_reg         | 32 x 32(NO_CHANGE)     | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++---------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1459.902 ; gain = 603.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1467.688 ; gain = 611.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sequencer_inst | pixel_mem_v0_inst/red_rom_reg   | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
+|sequencer_inst | pixel_mem_v0_inst/green_rom_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
+|sequencer_inst | pixel_mem_v0_inst/blue_rom_reg  | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
+|sequencer_inst | fifo_asycn_inst/mem_reg         | 32 x 32(NO_CHANGE)     | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++---------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/red_rom_reg_0_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/green_rom_reg_0_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/pixel_mem_v0_inst/blue_rom_reg_0_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sequencer_inst/fifo_asycn_inst/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1467.688 ; gain = 611.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1473.555 ; gain = 617.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1473.555 ; gain = 617.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1473.555 ; gain = 617.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1473.555 ; gain = 617.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.555 ; gain = 617.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.555 ; gain = 617.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_wiz  |     1|
+|2     |BUFGMUX  |     1|
+|3     |CARRY4   |    70|
+|4     |LUT1     |    19|
+|5     |LUT2     |   469|
+|6     |LUT3     |    54|
+|7     |LUT4     |   314|
+|8     |LUT5     |   100|
+|9     |LUT6     |   310|
+|10    |MUXF7    |     1|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |    96|
+|44    |FDCE     |  1168|
+|45    |FDPE     |    12|
+|46    |IBUF     |     3|
+|47    |OBUF     |     7|
+|48    |OBUFT    |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.555 ; gain = 617.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 84 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1473.555 ; gain = 551.668
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1473.555 ; gain = 617.352
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1473.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 169 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1489.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instance 
+
+Synth Design complete, checksum: d6e7c65e
+INFO: [Common 17-83] Releasing license: Synthesis
+194 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1489.270 ; gain = 1026.961
+INFO: [Common 17-1381] The checkpoint 'C:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 14 22:14:01 2026...
+[Sat Feb 14 22:14:07 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1519.309 ; gain = 0.000
+✅ Synthesis OK. Exporting Netlist...
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'rst_sync_pll_inst/clk_wiz_0_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1519.309 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 169 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, rst_sync_pll_inst/clk_wiz_0_inst/inst/clkin1_ibufg, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'rst_sync_pll_inst/clk_wiz_0_inst/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst/inst'
+Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2034.727 ; gain = 515.418
+Finished Parsing XDC File [c:/VivadoProjects/Projects/VerilogRTLCourse/lab12/lab12.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'rst_sync_pll_inst/clk_wiz_0_inst/inst'
+Parsing XDC File [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED_TOGGLE'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG7[6]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG7[5]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG7[4]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG7[3]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG7[2]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG7[1]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG7[0]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/VerilogRTLCourse/lab12/design/XDC/Nexys-A7-100T-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2034.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2034.727 ; gain = 515.418
+✅ Netlist exported.
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 14 22:14:19 2026...

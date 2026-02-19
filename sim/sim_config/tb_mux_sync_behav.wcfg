@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_mux_sync_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_mux_sync" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="745.001 ns"></ZoomEndTime>
+      <Cursor1Time time="529.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="363"></NameColumnWidth>
+      <ValueColumnWidth column_width="158"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb_mux_sync/from_clk" type="logic">
+      <obj_property name="ElementShortName">from_clk</obj_property>
+      <obj_property name="ObjectShortName">from_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/from_rst_n" type="logic">
+      <obj_property name="ElementShortName">from_rst_n</obj_property>
+      <obj_property name="ObjectShortName">from_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/din" type="array">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/dut/data_q" type="array">
+      <obj_property name="ElementShortName">data_q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/to_clk" type="logic">
+      <obj_property name="ElementShortName">to_clk</obj_property>
+      <obj_property name="ObjectShortName">to_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/to_rst_n" type="logic">
+      <obj_property name="ElementShortName">to_rst_n</obj_property>
+      <obj_property name="ObjectShortName">to_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/dut/q0" type="logic">
+      <obj_property name="ElementShortName">q0</obj_property>
+      <obj_property name="ObjectShortName">q0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/dut/q1" type="logic">
+      <obj_property name="ElementShortName">q1</obj_property>
+      <obj_property name="ObjectShortName">q1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/dut/q2" type="logic">
+      <obj_property name="ElementShortName">q2</obj_property>
+      <obj_property name="ObjectShortName">q2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/dout" type="array">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mux_sync/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+</wave_config>

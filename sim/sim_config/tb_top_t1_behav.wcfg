@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_t1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="common_pkg" />
+            <top_module name="fifo_defs_pkg" />
+            <top_module name="glbl" />
+            <top_module name="pixel_mem_pkg" />
+            <top_module name="regs_pkg" />
+            <top_module name="tb_top_t1" />
+            <top_module name="uart_defs_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="267.368915 us"></ZoomStartTime>
+      <ZoomEndTime time="354.218916 us"></ZoomEndTime>
+      <Cursor1Time time="279.925000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="380"></NameColumnWidth>
+      <ValueColumnWidth column_width="182"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="group2461" type="group">
+      <obj_property name="label">SEQ</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/btnc_r" type="logic">
+         <obj_property name="ElementShortName">btnc_r</obj_property>
+         <obj_property name="ObjectShortName">btnc_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/w_clk" type="logic">
+         <obj_property name="ElementShortName">w_clk</obj_property>
+         <obj_property name="ObjectShortName">w_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/w_rst_n" type="logic">
+         <obj_property name="ElementShortName">w_rst_n</obj_property>
+         <obj_property name="ObjectShortName">w_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/r_clk" type="logic">
+         <obj_property name="ElementShortName">r_clk</obj_property>
+         <obj_property name="ObjectShortName">r_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/r_rst_n" type="logic">
+         <obj_property name="ElementShortName">r_rst_n</obj_property>
+         <obj_property name="ObjectShortName">r_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/wr_en" type="logic">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/img_sel_r" type="logic">
+         <obj_property name="ElementShortName">img_sel_r</obj_property>
+         <obj_property name="ObjectShortName">img_sel_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/w_data" type="array">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/r_data_fifo" type="array">
+         <obj_property name="ElementShortName">r_data_fifo[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_fifo[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/r_data_img" type="array">
+         <obj_property name="ElementShortName">r_data_img[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_img[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/addr" type="array">
+         <obj_property name="ElementShortName">addr[23:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/wr_pixel" type="logic">
+         <obj_property name="ElementShortName">wr_pixel</obj_property>
+         <obj_property name="ObjectShortName">wr_pixel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/i_pixel_data" type="array">
+         <obj_property name="ElementShortName">i_pixel_data[23:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pixel_data[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/read_cmd" type="logic">
+         <obj_property name="ElementShortName">read_cmd</obj_property>
+         <obj_property name="ObjectShortName">read_cmd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/tx_r_data" type="array">
+         <obj_property name="ElementShortName">tx_r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/reg_read_valid" type="logic">
+         <obj_property name="ElementShortName">reg_read_valid</obj_property>
+         <obj_property name="ObjectShortName">reg_read_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/tx_mac_vec" type="array">
+         <obj_property name="ElementShortName">tx_mac_vec[127:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_vec[127:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/tx_mac_str" type="logic">
+         <obj_property name="ElementShortName">tx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/tx_mac_ready" type="logic">
+         <obj_property name="ElementShortName">tx_mac_ready</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/tx_mac_done" type="logic">
+         <obj_property name="ElementShortName">tx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/img_status_r" type="array">
+         <obj_property name="ElementShortName">img_status_r</obj_property>
+         <obj_property name="ObjectShortName">img_status_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/img_ctrl_r" type="array">
+         <obj_property name="ElementShortName">img_ctrl_r</obj_property>
+         <obj_property name="ObjectShortName">img_ctrl_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/img_tx_mon_r" type="array">
+         <obj_property name="ElementShortName">img_tx_mon_r</obj_property>
+         <obj_property name="ObjectShortName">img_tx_mon_r</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/o_almost_full_w" type="logic">
+         <obj_property name="ElementShortName">o_almost_full_w</obj_property>
+         <obj_property name="ObjectShortName">o_almost_full_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/wr_pixel_done" type="logic">
+         <obj_property name="ElementShortName">wr_pixel_done</obj_property>
+         <obj_property name="ObjectShortName">wr_pixel_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_pkt_load" type="logic">
+         <obj_property name="ElementShortName">pixel_pkt_load</obj_property>
+         <obj_property name="ObjectShortName">pixel_pkt_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/col_index" type="array">
+         <obj_property name="ElementShortName">col_index[9:0]</obj_property>
+         <obj_property name="ObjectShortName">col_index[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/row_index" type="array">
+         <obj_property name="ElementShortName">row_index[9:0]</obj_property>
+         <obj_property name="ObjectShortName">row_index[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/addr_low" type="array">
+         <obj_property name="ElementShortName">addr_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/img_trans" type="logic">
+         <obj_property name="ElementShortName">img_trans</obj_property>
+         <obj_property name="ObjectShortName">img_trans</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/img_done_trans" type="logic">
+         <obj_property name="ElementShortName">img_done_trans</obj_property>
+         <obj_property name="ObjectShortName">img_done_trans</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/r_img_writing_err" type="logic">
+         <obj_property name="ElementShortName">r_img_writing_err</obj_property>
+         <obj_property name="ObjectShortName">r_img_writing_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/r_img_reading_err" type="logic">
+         <obj_property name="ElementShortName">r_img_reading_err</obj_property>
+         <obj_property name="ObjectShortName">r_img_reading_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/done_col" type="logic">
+         <obj_property name="ElementShortName">done_col</obj_property>
+         <obj_property name="ObjectShortName">done_col</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/done_row" type="logic">
+         <obj_property name="ElementShortName">done_row</obj_property>
+         <obj_property name="ObjectShortName">done_row</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pop" type="logic">
+         <obj_property name="ElementShortName">pop</obj_property>
+         <obj_property name="ObjectShortName">pop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/o_full_w" type="logic">
+         <obj_property name="ElementShortName">o_full_w</obj_property>
+         <obj_property name="ObjectShortName">o_full_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/o_half_full" type="logic">
+         <obj_property name="ElementShortName">o_half_full</obj_property>
+         <obj_property name="ObjectShortName">o_half_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/o_almost_empty_r" type="logic">
+         <obj_property name="ElementShortName">o_almost_empty_r</obj_property>
+         <obj_property name="ObjectShortName">o_almost_empty_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/o_empty_r" type="logic">
+         <obj_property name="ElementShortName">o_empty_r</obj_property>
+         <obj_property name="ObjectShortName">o_empty_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_write_en" type="logic">
+         <obj_property name="ElementShortName">fifo_write_en</obj_property>
+         <obj_property name="ObjectShortName">fifo_write_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/i_fifo_red_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_red_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_red_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/i_fifo_green_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_green_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_green_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/i_fifo_blue_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_blue_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_blue_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/write_sub_pixel" type="array">
+         <obj_property name="ElementShortName">write_sub_pixel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">write_sub_pixel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_din" type="array">
+         <obj_property name="ElementShortName">fifo_din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_din[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_dout" type="array">
+         <obj_property name="ElementShortName">fifo_dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_dout[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/wr_pixel_valid" type="logic">
+         <obj_property name="ElementShortName">wr_pixel_valid</obj_property>
+         <obj_property name="ObjectShortName">wr_pixel_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/wr_pixel_pulse" type="logic">
+         <obj_property name="ElementShortName">wr_pixel_pulse</obj_property>
+         <obj_property name="ObjectShortName">wr_pixel_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/reg_read_valid_q" type="logic">
+         <obj_property name="ElementShortName">reg_read_valid_q</obj_property>
+         <obj_property name="ObjectShortName">reg_read_valid_q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pop_cond" type="logic">
+         <obj_property name="ElementShortName">pop_cond</obj_property>
+         <obj_property name="ObjectShortName">pop_cond</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_sel_r" type="logic">
+         <obj_property name="ElementShortName">fifo_sel_r</obj_property>
+         <obj_property name="ObjectShortName">fifo_sel_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/ST_WIDTH_MSB" type="array">
+         <obj_property name="ElementShortName">ST_WIDTH_MSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ST_WIDTH_MSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/ST_WIDTH_LSB" type="array">
+         <obj_property name="ElementShortName">ST_WIDTH_LSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ST_WIDTH_LSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/ST_HEIGHT_MSB" type="array">
+         <obj_property name="ElementShortName">ST_HEIGHT_MSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ST_HEIGHT_MSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/ST_HEIGHT_LSB" type="array">
+         <obj_property name="ElementShortName">ST_HEIGHT_LSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ST_HEIGHT_LSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/MON_COL_MSB" type="array">
+         <obj_property name="ElementShortName">MON_COL_MSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MON_COL_MSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/MON_COL_LSB" type="array">
+         <obj_property name="ElementShortName">MON_COL_LSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MON_COL_LSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/MON_ROW_MSB" type="array">
+         <obj_property name="ElementShortName">MON_ROW_MSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MON_ROW_MSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/MON_ROW_LSB" type="array">
+         <obj_property name="ElementShortName">MON_ROW_LSB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MON_ROW_LSB[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/CTRL_START_BIT" type="array">
+         <obj_property name="ElementShortName">CTRL_START_BIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTRL_START_BIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/R_IMG_STATUS_ADDR" type="array">
+         <obj_property name="ElementShortName">R_IMG_STATUS_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_IMG_STATUS_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/R_IMG_TX_MON_ADDR" type="array">
+         <obj_property name="ElementShortName">R_IMG_TX_MON_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_IMG_TX_MON_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/R_IMG_CTRL_ADDR" type="array">
+         <obj_property name="ElementShortName">R_IMG_CTRL_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_IMG_CTRL_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/DATA_HH" type="array">
+         <obj_property name="ElementShortName">DATA_HH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_HH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/DATA_HL" type="array">
+         <obj_property name="ElementShortName">DATA_HL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_HL[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/DATA_LH" type="array">
+         <obj_property name="ElementShortName">DATA_LH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_LH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/DATA_LL" type="array">
+         <obj_property name="ElementShortName">DATA_LL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_LL[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1006" type="group">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/i_almost_full" type="logic">
+         <obj_property name="ElementShortName">i_almost_full</obj_property>
+         <obj_property name="ObjectShortName">i_almost_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/comp" type="logic">
+         <obj_property name="ElementShortName">comp</obj_property>
+         <obj_property name="ObjectShortName">comp</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/wr_pixel" type="logic">
+         <obj_property name="ElementShortName">wr_pixel</obj_property>
+         <obj_property name="ObjectShortName">wr_pixel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/o_red_data" type="array">
+         <obj_property name="ElementShortName">o_red_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_red_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/o_green_data" type="array">
+         <obj_property name="ElementShortName">o_green_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_green_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/o_blue_data" type="array">
+         <obj_property name="ElementShortName">o_blue_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_blue_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/pixel_pkt_load" type="logic">
+         <obj_property name="ElementShortName">pixel_pkt_load</obj_property>
+         <obj_property name="ObjectShortName">pixel_pkt_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/o_done_wr" type="logic">
+         <obj_property name="ElementShortName">o_done_wr</obj_property>
+         <obj_property name="ObjectShortName">o_done_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/i_pixel_data" type="array">
+         <obj_property name="ElementShortName">i_pixel_data[23:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pixel_data[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/red_temp" type="array">
+         <obj_property name="ElementShortName">red_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">red_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/green_temp" type="array">
+         <obj_property name="ElementShortName">green_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">green_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/blue_temp" type="array">
+         <obj_property name="ElementShortName">blue_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">blue_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/red_mem" type="array">
+         <obj_property name="ElementShortName">red_mem[31:0]</obj_property>
+         <obj_property name="ObjectShortName">red_mem[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/green_mem" type="array">
+         <obj_property name="ElementShortName">green_mem[31:0]</obj_property>
+         <obj_property name="ObjectShortName">green_mem[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/blue_mem" type="array">
+         <obj_property name="ElementShortName">blue_mem[31:0]</obj_property>
+         <obj_property name="ObjectShortName">blue_mem[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/pixel_cnt" type="array">
+         <obj_property name="ElementShortName">pixel_cnt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">pixel_cnt[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/write_addr" type="array">
+         <obj_property name="ElementShortName">write_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">write_addr[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/cycle_cnt" type="array">
+         <obj_property name="ElementShortName">cycle_cnt[1:0]</obj_property>
+         <obj_property name="ObjectShortName">cycle_cnt[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/read_addr" type="array">
+         <obj_property name="ElementShortName">read_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">read_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/wr_pulse" type="logic">
+         <obj_property name="ElementShortName">wr_pulse</obj_property>
+         <obj_property name="ObjectShortName">wr_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/stage1" type="logic">
+         <obj_property name="ElementShortName">stage1</obj_property>
+         <obj_property name="ObjectShortName">stage1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/pixel_mem_v0_inst/img_loaded" type="logic">
+         <obj_property name="ElementShortName">img_loaded</obj_property>
+         <obj_property name="ObjectShortName">img_loaded</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2462" type="group">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/r_clk" type="logic">
+         <obj_property name="ElementShortName">r_clk</obj_property>
+         <obj_property name="ObjectShortName">r_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/r_rst_n" type="logic">
+         <obj_property name="ElementShortName">r_rst_n</obj_property>
+         <obj_property name="ObjectShortName">r_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/w_clk" type="logic">
+         <obj_property name="ElementShortName">w_clk</obj_property>
+         <obj_property name="ObjectShortName">w_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/w_rst_n" type="logic">
+         <obj_property name="ElementShortName">w_rst_n</obj_property>
+         <obj_property name="ObjectShortName">w_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/i_fifo_red_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_red_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_red_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/i_fifo_green_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_green_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_green_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/i_fifo_blue_temp" type="array">
+         <obj_property name="ElementShortName">i_fifo_blue_temp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fifo_blue_temp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_din" type="array">
+         <obj_property name="ElementShortName">fifo_din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_din[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/write_sub_pixel" type="array">
+         <obj_property name="ElementShortName">write_sub_pixel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">write_sub_pixel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/push" type="logic">
+         <obj_property name="ElementShortName">push</obj_property>
+         <obj_property name="ObjectShortName">push</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/pop" type="logic">
+         <obj_property name="ElementShortName">pop</obj_property>
+         <obj_property name="ObjectShortName">pop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/i_data" type="array">
+         <obj_property name="ElementShortName">i_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/mem" type="array">
+         <obj_property name="ElementShortName">mem[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[0:31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/o_data" type="array">
+         <obj_property name="ElementShortName">o_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/o_full_w" type="logic">
+         <obj_property name="ElementShortName">o_full_w</obj_property>
+         <obj_property name="ObjectShortName">o_full_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/o_almost_full_w" type="logic">
+         <obj_property name="ElementShortName">o_almost_full_w</obj_property>
+         <obj_property name="ObjectShortName">o_almost_full_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/wait_write" type="logic">
+         <obj_property name="ElementShortName">wait_write</obj_property>
+         <obj_property name="ObjectShortName">wait_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/o_half_full" type="logic">
+         <obj_property name="ElementShortName">o_half_full</obj_property>
+         <obj_property name="ObjectShortName">o_half_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/o_almost_empty_r" type="logic">
+         <obj_property name="ElementShortName">o_almost_empty_r</obj_property>
+         <obj_property name="ObjectShortName">o_almost_empty_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/o_empty_r" type="logic">
+         <obj_property name="ElementShortName">o_empty_r</obj_property>
+         <obj_property name="ObjectShortName">o_empty_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/af_tresh" type="array">
+         <obj_property name="ElementShortName">af_tresh[4:0]</obj_property>
+         <obj_property name="ObjectShortName">af_tresh[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/ae_tresh" type="array">
+         <obj_property name="ElementShortName">ae_tresh[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ae_tresh[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/wr_en" type="logic">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/sel_fifo_r" type="logic">
+         <obj_property name="ElementShortName">sel_fifo_r</obj_property>
+         <obj_property name="ObjectShortName">sel_fifo_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/addr_low" type="array">
+         <obj_property name="ElementShortName">addr_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/w_data" type="array">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/r_data" type="array">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/fifo_ctrl_r" type="array">
+         <obj_property name="ElementShortName">fifo_ctrl_r</obj_property>
+         <obj_property name="ObjectShortName">fifo_ctrl_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/fifo_ctrl_r_v" type="array">
+         <obj_property name="ElementShortName">fifo_ctrl_r_v</obj_property>
+         <obj_property name="ObjectShortName">fifo_ctrl_r_v</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/w_ptr_bin" type="array">
+         <obj_property name="ElementShortName">w_ptr_bin[5:0]</obj_property>
+         <obj_property name="ObjectShortName">w_ptr_bin[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/w_ptr_gray" type="array">
+         <obj_property name="ElementShortName">w_ptr_gray[5:0]</obj_property>
+         <obj_property name="ObjectShortName">w_ptr_gray[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/r_ptr_gray_sync" type="array">
+         <obj_property name="ElementShortName">r_ptr_gray_sync[5:0]</obj_property>
+         <obj_property name="ObjectShortName">r_ptr_gray_sync[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/r_ptr_bin" type="array">
+         <obj_property name="ElementShortName">r_ptr_bin[5:0]</obj_property>
+         <obj_property name="ObjectShortName">r_ptr_bin[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/r_ptr_gray" type="array">
+         <obj_property name="ElementShortName">r_ptr_gray[5:0]</obj_property>
+         <obj_property name="ObjectShortName">r_ptr_gray[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/w_ptr_gray_sync" type="array">
+         <obj_property name="ElementShortName">w_ptr_gray_sync[5:0]</obj_property>
+         <obj_property name="ObjectShortName">w_ptr_gray_sync[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/w_gray_meta" type="array">
+         <obj_property name="ElementShortName">w_gray_meta[5:0]</obj_property>
+         <obj_property name="ObjectShortName">w_gray_meta[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/r_gray_meta" type="array">
+         <obj_property name="ElementShortName">r_gray_meta[5:0]</obj_property>
+         <obj_property name="ObjectShortName">r_gray_meta[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/w_ptr_bin_sync" type="array">
+         <obj_property name="ElementShortName">w_ptr_bin_sync[5:0]</obj_property>
+         <obj_property name="ObjectShortName">w_ptr_bin_sync[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/r_ptr_bin_sync" type="array">
+         <obj_property name="ElementShortName">r_ptr_bin_sync[5:0]</obj_property>
+         <obj_property name="ObjectShortName">r_ptr_bin_sync[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/count_r" type="array">
+         <obj_property name="ElementShortName">count_r[5:0]</obj_property>
+         <obj_property name="ObjectShortName">count_r[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/count_w" type="array">
+         <obj_property name="ElementShortName">count_w[5:0]</obj_property>
+         <obj_property name="ObjectShortName">count_w[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/count" type="array">
+         <obj_property name="ElementShortName">count[5:0]</obj_property>
+         <obj_property name="ObjectShortName">count[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/sequencer_inst/fifo_asycn_inst/PTR_WIDTH" type="array">
+         <obj_property name="ElementShortName">PTR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PTR_WIDTH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2590" type="group">
+      <obj_property name="label">UART</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/tx_clk" type="logic">
+         <obj_property name="ElementShortName">tx_clk</obj_property>
+         <obj_property name="ObjectShortName">tx_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/tx_sync_rst_n" type="logic">
+         <obj_property name="ElementShortName">tx_sync_rst_n</obj_property>
+         <obj_property name="ObjectShortName">tx_sync_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/rx_clk" type="logic">
+         <obj_property name="ElementShortName">rx_clk</obj_property>
+         <obj_property name="ObjectShortName">rx_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/rx_sync_rst_n" type="logic">
+         <obj_property name="ElementShortName">rx_sync_rst_n</obj_property>
+         <obj_property name="ObjectShortName">rx_sync_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/i_tx_mac_str" type="logic">
+         <obj_property name="ElementShortName">i_tx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">i_tx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/i_tx_mac_vec" type="array">
+         <obj_property name="ElementShortName">i_tx_mac_vec[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_tx_mac_vec[127:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/o_tx_mac_done" type="logic">
+         <obj_property name="ElementShortName">o_tx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">o_tx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/o_tx_mac_ready" type="logic">
+         <obj_property name="ElementShortName">o_tx_mac_ready</obj_property>
+         <obj_property name="ObjectShortName">o_tx_mac_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/i_uart_en" type="logic">
+         <obj_property name="ElementShortName">i_uart_en</obj_property>
+         <obj_property name="ObjectShortName">i_uart_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/i_wr_en" type="logic">
+         <obj_property name="ElementShortName">i_wr_en</obj_property>
+         <obj_property name="ObjectShortName">i_wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/i_addr_low" type="array">
+         <obj_property name="ElementShortName">i_addr_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_addr_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/i_w_data" type="array">
+         <obj_property name="ElementShortName">i_w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/o_r_txr_data" type="array">
+         <obj_property name="ElementShortName">o_r_txr_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_r_txr_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/i_rx_line" type="logic">
+         <obj_property name="ElementShortName">i_rx_line</obj_property>
+         <obj_property name="ObjectShortName">i_rx_line</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/i_cmd_ack" type="logic">
+         <obj_property name="ElementShortName">i_cmd_ack</obj_property>
+         <obj_property name="ObjectShortName">i_cmd_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/o_rx_mac_done" type="logic">
+         <obj_property name="ElementShortName">o_rx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">o_rx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/o_rx_mac_vec" type="array">
+         <obj_property name="ElementShortName">o_rx_mac_vec[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rx_mac_vec[127:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/o_tx_line" type="logic">
+         <obj_property name="ElementShortName">o_tx_line</obj_property>
+         <obj_property name="ObjectShortName">o_tx_line</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/o_led_toggle" type="logic">
+         <obj_property name="ElementShortName">o_led_toggle</obj_property>
+         <obj_property name="ObjectShortName">o_led_toggle</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/rx_phy_vec" type="array">
+         <obj_property name="ElementShortName">rx_phy_vec[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_phy_vec[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/rx_phy_done" type="logic">
+         <obj_property name="ElementShortName">rx_phy_done</obj_property>
+         <obj_property name="ObjectShortName">rx_phy_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/rx_mac_str" type="logic">
+         <obj_property name="ElementShortName">rx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">rx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/r_data_rx" type="array">
+         <obj_property name="ElementShortName">r_data_rx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_rx[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/tx_phy_vec" type="array">
+         <obj_property name="ElementShortName">tx_phy_vec[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_phy_vec[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/tx_delay_ms" type="array">
+         <obj_property name="ElementShortName">tx_delay_ms[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_delay_ms[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/tx_phy_str" type="logic">
+         <obj_property name="ElementShortName">tx_phy_str</obj_property>
+         <obj_property name="ObjectShortName">tx_phy_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/tx_phy_ready" type="logic">
+         <obj_property name="ElementShortName">tx_phy_ready</obj_property>
+         <obj_property name="ObjectShortName">tx_phy_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/tx_phy_done" type="logic">
+         <obj_property name="ElementShortName">tx_phy_done</obj_property>
+         <obj_property name="ObjectShortName">tx_phy_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/r_data_tx" type="array">
+         <obj_property name="ElementShortName">r_data_tx[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_tx[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/frame_to_send" type="array">
+         <obj_property name="ElementShortName">frame_to_send[127:0]</obj_property>
+         <obj_property name="ObjectShortName">frame_to_send[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group688" type="group">
+      <obj_property name="label">Rx_mac</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/rx_vec" type="array">
+         <obj_property name="ElementShortName">rx_vec[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_vec[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/rx_phy_done" type="logic">
+         <obj_property name="ElementShortName">rx_phy_done</obj_property>
+         <obj_property name="ObjectShortName">rx_phy_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/temp_frame_reg" type="array">
+         <obj_property name="ElementShortName">temp_frame_reg[127:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_frame_reg[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/frame_data" type="array">
+         <obj_property name="ElementShortName">frame_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">frame_data[127:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/rx_mac_str" type="logic">
+         <obj_property name="ElementShortName">rx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">rx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/rx_mac_done" type="logic">
+         <obj_property name="ElementShortName">rx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">rx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/end_frame" type="logic">
+         <obj_property name="ElementShortName">end_frame</obj_property>
+         <obj_property name="ObjectShortName">end_frame</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/end_byte_cnt" type="array">
+         <obj_property name="ElementShortName">end_byte_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">end_byte_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/cmd_ack" type="logic">
+         <obj_property name="ElementShortName">cmd_ack</obj_property>
+         <obj_property name="ObjectShortName">cmd_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/pst" type="array">
+         <obj_property name="ElementShortName">pst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/nst" type="array">
+         <obj_property name="ElementShortName">nst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">nst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/write_ptr" type="array">
+         <obj_property name="ElementShortName">write_ptr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">write_ptr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/r_data" type="array">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_t1/dut/uart_wrapper_inst/Rx_mac_inst/bytes_recived_cnt" type="array">
+         <obj_property name="ElementShortName">bytes_recived_cnt</obj_property>
+         <obj_property name="ObjectShortName">bytes_recived_cnt</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

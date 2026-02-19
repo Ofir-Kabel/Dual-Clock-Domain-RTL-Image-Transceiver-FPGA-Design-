@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sequencer_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sequencer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="31.451074166 ms"></ZoomStartTime>
+      <ZoomEndTime time="66.030940815 ms"></ZoomEndTime>
+      <Cursor1Time time="47.987285165 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="294"></NameColumnWidth>
+      <ValueColumnWidth column_width="124"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group25" type="group">
+      <obj_property name="label">SEQ</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sequencer/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/wr_en" type="logic">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/img_sel_r" type="logic">
+         <obj_property name="ElementShortName">img_sel_r</obj_property>
+         <obj_property name="ObjectShortName">img_sel_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/addr_low" type="array">
+         <obj_property name="ElementShortName">addr_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/w_data" type="array">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/r_data_fifo" type="array">
+         <obj_property name="ElementShortName">r_data_fifo[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_fifo[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/r_data_img" type="array">
+         <obj_property name="ElementShortName">r_data_img[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_img[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/r_data_msg" type="array">
+         <obj_property name="ElementShortName">r_data_msg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_msg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_din" type="array">
+         <obj_property name="ElementShortName">fifo_din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_din[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/tx_mac_ready" type="logic">
+         <obj_property name="ElementShortName">tx_mac_ready</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/tx_mac_done" type="logic">
+         <obj_property name="ElementShortName">tx_mac_done</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/tx_mac_str" type="logic">
+         <obj_property name="ElementShortName">tx_mac_str</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_str</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/read_cmd" type="logic">
+         <obj_property name="ElementShortName">read_cmd</obj_property>
+         <obj_property name="ObjectShortName">read_cmd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_pkt_load" type="logic">
+         <obj_property name="ElementShortName">pixel_pkt_load</obj_property>
+         <obj_property name="ObjectShortName">pixel_pkt_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/o_rom_red" type="array">
+         <obj_property name="ElementShortName">o_rom_red[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_red[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/o_rom_green" type="array">
+         <obj_property name="ElementShortName">o_rom_green[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_green[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/o_rom_blue" type="array">
+         <obj_property name="ElementShortName">o_rom_blue[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_blue[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider735">
+         <obj_property name="label">TX</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/tx_mac_vec" type="array">
+         <obj_property name="ElementShortName">tx_mac_vec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_mac_vec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/o_fifo_data" type="array">
+         <obj_property name="ElementShortName">o_fifo_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_fifo_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/CLK_PERIOD" type="array">
+         <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/R_IMG_STATUS_ADDR" type="array">
+         <obj_property name="ElementShortName">R_IMG_STATUS_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_IMG_STATUS_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/R_IMG_CTRL_ADDR" type="array">
+         <obj_property name="ElementShortName">R_IMG_CTRL_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_IMG_CTRL_ADDR[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group26" type="group">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/push" type="logic">
+         <obj_property name="ElementShortName">push</obj_property>
+         <obj_property name="ObjectShortName">push</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/pop" type="logic">
+         <obj_property name="ElementShortName">pop</obj_property>
+         <obj_property name="ObjectShortName">pop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/i_data" type="array">
+         <obj_property name="ElementShortName">i_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/o_data" type="array">
+         <obj_property name="ElementShortName">o_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/o_empty" type="logic">
+         <obj_property name="ElementShortName">o_empty</obj_property>
+         <obj_property name="ObjectShortName">o_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/o_full" type="logic">
+         <obj_property name="ElementShortName">o_full</obj_property>
+         <obj_property name="ObjectShortName">o_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/o_half_full" type="logic">
+         <obj_property name="ElementShortName">o_half_full</obj_property>
+         <obj_property name="ObjectShortName">o_half_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/o_almost_empty" type="logic">
+         <obj_property name="ElementShortName">o_almost_empty</obj_property>
+         <obj_property name="ObjectShortName">o_almost_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/o_almost_full" type="logic">
+         <obj_property name="ElementShortName">o_almost_full</obj_property>
+         <obj_property name="ObjectShortName">o_almost_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/wr_en" type="logic">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/sel_fifo_r" type="logic">
+         <obj_property name="ElementShortName">sel_fifo_r</obj_property>
+         <obj_property name="ObjectShortName">sel_fifo_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/addr_low" type="array">
+         <obj_property name="ElementShortName">addr_low[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_low[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/w_data" type="array">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/r_data" type="array">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/fifo" type="array">
+         <obj_property name="ElementShortName">fifo[0:15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo[0:15][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/w_pointer" type="array">
+         <obj_property name="ElementShortName">w_pointer[4:0]</obj_property>
+         <obj_property name="ObjectShortName">w_pointer[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/r_pointer" type="array">
+         <obj_property name="ElementShortName">r_pointer[4:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pointer[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/af_tresh" type="array">
+         <obj_property name="ElementShortName">af_tresh[2:0]</obj_property>
+         <obj_property name="ObjectShortName">af_tresh[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/ae_tresh" type="array">
+         <obj_property name="ElementShortName">ae_tresh[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ae_tresh[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/fifo_ctrl_r" type="array">
+         <obj_property name="ElementShortName">fifo_ctrl_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_ctrl_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/fifo_count" type="array">
+         <obj_property name="ElementShortName">fifo_count[4:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_count[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/wait_write" type="logic">
+         <obj_property name="ElementShortName">wait_write</obj_property>
+         <obj_property name="ObjectShortName">wait_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/FIFO_LEN" type="array">
+         <obj_property name="ElementShortName">FIFO_LEN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_LEN[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/FIFO_DEPTH" type="array">
+         <obj_property name="ElementShortName">FIFO_DEPTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_DEPTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/FIFO_CTRL_ADDR" type="array">
+         <obj_property name="ElementShortName">FIFO_CTRL_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_CTRL_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/BIT_AF_MOD" type="array">
+         <obj_property name="ElementShortName">BIT_AF_MOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BIT_AF_MOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/fifo_inst/BIT_AE_MOD" type="array">
+         <obj_property name="ElementShortName">BIT_AE_MOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BIT_AE_MOD[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group27" type="group">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/i_almost_full" type="logic">
+         <obj_property name="ElementShortName">i_almost_full</obj_property>
+         <obj_property name="ObjectShortName">i_almost_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/i_img_size" type="array">
+         <obj_property name="ElementShortName">i_img_size[9:0]</obj_property>
+         <obj_property name="ObjectShortName">i_img_size[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/o_red_data" type="array">
+         <obj_property name="ElementShortName">o_red_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_red_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/o_green_data" type="array">
+         <obj_property name="ElementShortName">o_green_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_green_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/o_blue_data" type="array">
+         <obj_property name="ElementShortName">o_blue_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_blue_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/pixel_pkt_load" type="logic">
+         <obj_property name="ElementShortName">pixel_pkt_load</obj_property>
+         <obj_property name="ObjectShortName">pixel_pkt_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/o_done" type="logic">
+         <obj_property name="ElementShortName">o_done</obj_property>
+         <obj_property name="ObjectShortName">o_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/red_rom" type="array">
+         <obj_property name="ElementShortName">red_rom[0:1028][7:0]</obj_property>
+         <obj_property name="ObjectShortName">red_rom[0:1028][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/green_rom" type="array">
+         <obj_property name="ElementShortName">green_rom[0:1028][7:0]</obj_property>
+         <obj_property name="ObjectShortName">green_rom[0:1028][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/blue_rom" type="array">
+         <obj_property name="ElementShortName">blue_rom[0:1028][7:0]</obj_property>
+         <obj_property name="ObjectShortName">blue_rom[0:1028][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/cycle_cnt" type="array">
+         <obj_property name="ElementShortName">cycle_cnt[1:0]</obj_property>
+         <obj_property name="ObjectShortName">cycle_cnt[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/addr" type="array">
+         <obj_property name="ElementShortName">addr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/DATA_WIDTH" type="array">
+         <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/IMG_H" type="array">
+         <obj_property name="ElementShortName">IMG_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMG_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/IMG_W" type="array">
+         <obj_property name="ElementShortName">IMG_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMG_W[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer/dut/pixel_mem_inst/PIXEL_NUM" type="array">
+         <obj_property name="ElementShortName">PIXEL_NUM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_NUM[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

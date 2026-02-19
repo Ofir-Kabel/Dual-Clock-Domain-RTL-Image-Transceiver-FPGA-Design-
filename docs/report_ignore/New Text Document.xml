@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" version="24.0.4">
+  <diagram name="RTL Top Level" id="rtl_top_v2">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="grp_clk" value="CLOCKING (rst_sync_pll)" style="group;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;align=left;verticalAlign=top;dashed=1;strokeColor=#B3B3B3;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pll_mod" value="PLL &amp; SYNC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="grp_clk" vertex="1">
+          <mxGeometry x="50" y="30" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_clks" value="clk_wiz&#xa;rst_n_sync" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="grp_clk" vertex="1">
+          <mxGeometry x="110" y="60" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uart" value="UART_WRAPPER" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="40" y="280" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="uart_rx" value="RX Logic" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="uart" vertex="1">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uart_tx" value="TX Logic" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="uart" vertex="1">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uart_ports" value="RX_LINE / TX_LINE" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=2;fontSize=10;" parent="uart" vertex="1">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="parser" value="MSG_PARSER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="280" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mux" value="ADDR_SELECTION&#xa;(Read Data Mux)" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=west;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="440" width="100" height="200" as="geometry" />
+        </mxCell>
+
+        <mxCell id="seq" value="SEQUENCER&#xa;(TX Control &amp; FIFO)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="520" width="140" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="grp_periph" value="PERIPHERALS" style="group;whiteSpace=wrap;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="40" width="240" height="600" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="disp" value="DISP_WRAPPER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="grp_periph" vertex="1">
+          <mxGeometry x="20" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="disp_out" value="7SEG / AN" style="text;html=1;align=center;" parent="grp_periph" vertex="1">
+          <mxGeometry x="170" y="55" width="60" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="led" value="LED_WRAPPER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="grp_periph" vertex="1">
+          <mxGeometry x="20" y="160" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pwm" value="PWM_WRAPPER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="grp_periph" vertex="1">
+          <mxGeometry x="20" y="300" width="140" height="80" as="geometry" />
+        </mxCell>
+
+         <mxCell id="sys" value="SYS_CFG (Logic)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="grp_periph" vertex="1">
+          <mxGeometry x="20" y="420" width="140" height="50" as="geometry" />
+        </mxCell>
+
+
+        <mxCell id="c1" value="rx_mac_vec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.25;entryX=0;entryY=0.5;strokeWidth=2;" parent="1" source="uart" target="parser" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bus_wr" value="Write Bus (addr, w_data, wr_en)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=3;strokeColor=#FF3333;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="320" as="sourcePoint" />
+            <mxPoint x="680" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="tap1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;strokeColor=#FF3333;" parent="1" target="disp" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="320" as="sourcePoint" />
+            <mxPoint x="600" y="80" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tap2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;strokeColor=#FF3333;" parent="1" target="led" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="320" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="640" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tap3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;strokeColor=#FF3333;" parent="1" target="pwm" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="320" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="640" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="read_bus" value="r_data_*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=1;strokeWidth=2;strokeColor=#0066CC;" parent="1" target="mux" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="540" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="620" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link_sys" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.25;strokeColor=#0066CC;" parent="1" source="sys" target="mux" edge="1">
+           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_pwm" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;strokeColor=#0066CC;" parent="1" source="pwm" target="mux" edge="1">
+           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_led" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.75;strokeColor=#0066CC;" parent="1" source="led" target="mux" edge="1">
+           <mxGeometry relative="1" as="geometry">
+             <Array as="points">
+               <mxPoint x="740" y="200" />
+               <mxPoint x="700" y="200" />
+               <mxPoint x="700" y="590" />
+             </Array>
+           </mxGeometry>
+        </mxCell>
+
+        <mxCell id="c_mux_seq" value="tx_r_data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;strokeWidth=2;" parent="1" source="mux" target="seq" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c_seq_uart" value="tx_mac_vec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.75;strokeWidth=2;" parent="1" source="seq" target="uart" edge="1">
+          <mxGeometry relative="1" as="geometry">
+             <Array as="points">
+                <mxPoint x="240" y="580" />
+                <mxPoint x="240" y="415" />
+             </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="pwm_led_link" value="PWM_Duty" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.75;dashed=1;" parent="1" source="pwm" target="led" edge="1">
+           <mxGeometry x="-0.2" relative="1" as="geometry">
+             <Array as="points">
+                <mxPoint x="880" y="340" />
+                <mxPoint x="880" y="220" />
+             </Array>
+             <mxPoint as="offset" />
+           </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sequencer_stress_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fifo_defs_pkg" />
+            <top_module name="glbl" />
+            <top_module name="pixel_mem_pkg" />
+            <top_module name="regs_pkg" />
+            <top_module name="tb_sequencer_stress" />
+            <top_module name="uart_defs_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="978.596 ns"></ZoomEndTime>
+      <Cursor1Time time="155.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="363"></NameColumnWidth>
+      <ValueColumnWidth column_width="166"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wvobject fp_name="group73" type="group">
+      <obj_property name="label">SEQ</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sequencer_stress/dut/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider413">
+         <obj_property name="label">REG</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider408">
+         <obj_property name="label">FIFO_W</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/o_rom_red" type="array">
+         <obj_property name="ElementShortName">o_rom_red[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_red[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/o_rom_green" type="array">
+         <obj_property name="ElementShortName">o_rom_green[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_green[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/o_rom_blue" type="array">
+         <obj_property name="ElementShortName">o_rom_blue[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rom_blue[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/o_almost_full_w" type="logic">
+         <obj_property name="ElementShortName">o_almost_full_w</obj_property>
+         <obj_property name="ObjectShortName">o_almost_full_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/pixel_pkt_load" type="logic">
+         <obj_property name="ElementShortName">pixel_pkt_load</obj_property>
+         <obj_property name="ObjectShortName">pixel_pkt_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/write_sub_pixel" type="array">
+         <obj_property name="ElementShortName">write_sub_pixel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">write_sub_pixel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/fifo_write_en" type="logic">
+         <obj_property name="ElementShortName">fifo_write_en</obj_property>
+         <obj_property name="ObjectShortName">fifo_write_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sequencer_stress/dut/fifo_din" type="array">
+         <obj_property name="ElementShortName">fifo_din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_din[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider410">
+         <obj_property name="label">FIFO_R</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider412">
+         <obj_property name="label">TX</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider411">
+         <obj_property name="label">FIFO_F</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

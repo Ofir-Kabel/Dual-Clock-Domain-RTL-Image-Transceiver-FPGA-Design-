@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fifo_async_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fifo_defs_pkg" />
+            <top_module name="glbl" />
+            <top_module name="regs_pkg" />
+            <top_module name="tb_fifo_async" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="25,151,458.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="25,151,823.867 ns"></ZoomEndTime>
+      <Cursor1Time time="25,151,763.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="357"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/tb_fifo_async/w_clk" type="logic">
+      <obj_property name="ElementShortName">w_clk</obj_property>
+      <obj_property name="ObjectShortName">w_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/w_rst_n" type="logic">
+      <obj_property name="ElementShortName">w_rst_n</obj_property>
+      <obj_property name="ObjectShortName">w_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/i_data" type="array">
+      <obj_property name="ElementShortName">i_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/w_ptr_bin" type="array">
+      <obj_property name="ElementShortName">w_ptr_bin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ptr_bin[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/r_ptr_bin" type="array">
+      <obj_property name="ElementShortName">r_ptr_bin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_ptr_bin[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/count" type="array">
+      <obj_property name="ElementShortName">count[5:0]</obj_property>
+      <obj_property name="ObjectShortName">count[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/o_data" type="array">
+      <obj_property name="ElementShortName">o_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/o_full_w" type="logic">
+      <obj_property name="ElementShortName">o_full_w</obj_property>
+      <obj_property name="ObjectShortName">o_full_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/af_tresh" type="array">
+      <obj_property name="ElementShortName">af_tresh[4:0]</obj_property>
+      <obj_property name="ObjectShortName">af_tresh[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/wait_write" type="logic">
+      <obj_property name="ElementShortName">wait_write</obj_property>
+      <obj_property name="ObjectShortName">wait_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/w_ptr_bin" type="array">
+      <obj_property name="ElementShortName">w_ptr_bin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ptr_bin[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/r_ptr_bin_sync" type="array">
+      <obj_property name="ElementShortName">r_ptr_bin_sync[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_ptr_bin_sync[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/count_w" type="array">
+      <obj_property name="ElementShortName">count_w[5:0]</obj_property>
+      <obj_property name="ObjectShortName">count_w[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/o_almost_full_w" type="logic">
+      <obj_property name="ElementShortName">o_almost_full_w</obj_property>
+      <obj_property name="ObjectShortName">o_almost_full_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/o_half_full" type="logic">
+      <obj_property name="ElementShortName">o_half_full</obj_property>
+      <obj_property name="ObjectShortName">o_half_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/o_almost_empty_r" type="logic">
+      <obj_property name="ElementShortName">o_almost_empty_r</obj_property>
+      <obj_property name="ObjectShortName">o_almost_empty_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/ae_tresh" type="array">
+      <obj_property name="ElementShortName">ae_tresh[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ae_tresh[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/w_ptr_bin_sync" type="array">
+      <obj_property name="ElementShortName">w_ptr_bin_sync[5:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ptr_bin_sync[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/r_ptr_bin" type="array">
+      <obj_property name="ElementShortName">r_ptr_bin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_ptr_bin[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/dut/count_r" type="array">
+      <obj_property name="ElementShortName">count_r[5:0]</obj_property>
+      <obj_property name="ObjectShortName">count_r[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/o_empty_r" type="logic">
+      <obj_property name="ElementShortName">o_empty_r</obj_property>
+      <obj_property name="ObjectShortName">o_empty_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/r_clk" type="logic">
+      <obj_property name="ElementShortName">r_clk</obj_property>
+      <obj_property name="ObjectShortName">r_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/r_rst_n" type="logic">
+      <obj_property name="ElementShortName">r_rst_n</obj_property>
+      <obj_property name="ObjectShortName">r_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/pop" type="logic">
+      <obj_property name="ElementShortName">pop</obj_property>
+      <obj_property name="ObjectShortName">pop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/FIFO_DEPTH" type="array">
+      <obj_property name="ElementShortName">FIFO_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FIFO_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo_async/BYTE_LEN" type="array">
+      <obj_property name="ElementShortName">BYTE_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BYTE_LEN[31:0]</obj_property>
+   </wvobject>
+</wave_config>

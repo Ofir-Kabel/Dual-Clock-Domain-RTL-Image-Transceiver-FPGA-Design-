@@ -1,0 +1,4 @@
+Timestamp    | Event              | Expected (Row,Col)   | Actual (Row,Col)
+-------------------------------------------------------------------------------------
+12:47:20.263 | NEW FRAME START    | (256,256)            | (0,0)
+12:47:25.556 | TX COMPLETE        | Duration: 5.29s      | Pixels: 65536

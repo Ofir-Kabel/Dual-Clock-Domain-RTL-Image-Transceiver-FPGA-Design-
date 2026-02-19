@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fifo_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="regs_pkg" />
+            <top_module name="tb_fifo" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999,994 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,000,013 ps"></ZoomEndTime>
+      <Cursor1Time time="1,000,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="284"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_fifo/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/push" type="logic">
+      <obj_property name="ElementShortName">push</obj_property>
+      <obj_property name="ObjectShortName">push</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/pop" type="logic">
+      <obj_property name="ElementShortName">pop</obj_property>
+      <obj_property name="ObjectShortName">pop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/i_data" type="array">
+      <obj_property name="ElementShortName">i_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/dut/w_pointer" type="array">
+      <obj_property name="ElementShortName">w_pointer[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_pointer[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/dut/fifo_count" type="array">
+      <obj_property name="ElementShortName">fifo_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/dut/r_pointer" type="array">
+      <obj_property name="ElementShortName">r_pointer[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r_pointer[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/o_data" type="array">
+      <obj_property name="ElementShortName">o_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/o_empty" type="logic">
+      <obj_property name="ElementShortName">o_empty</obj_property>
+      <obj_property name="ObjectShortName">o_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/o_full" type="logic">
+      <obj_property name="ElementShortName">o_full</obj_property>
+      <obj_property name="ObjectShortName">o_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/o_half_full" type="logic">
+      <obj_property name="ElementShortName">o_half_full</obj_property>
+      <obj_property name="ObjectShortName">o_half_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/o_almost_empty" type="logic">
+      <obj_property name="ElementShortName">o_almost_empty</obj_property>
+      <obj_property name="ObjectShortName">o_almost_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/o_almost_full" type="logic">
+      <obj_property name="ElementShortName">o_almost_full</obj_property>
+      <obj_property name="ObjectShortName">o_almost_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fifo/dut/wait_write" type="logic">
+      <obj_property name="ElementShortName">wait_write</obj_property>
+      <obj_property name="ObjectShortName">wait_write</obj_property>
+   </wvobject>
+</wave_config>
